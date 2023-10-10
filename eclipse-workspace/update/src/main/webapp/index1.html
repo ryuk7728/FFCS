@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Branch</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background: #34495E;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+       
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            width: 400px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .large-button {
+            padding: 14px 20px;
+            font-size: 18px;
+            background-color: #2ecc71;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform property */
+        }
+
+        .large-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05); /* Scale the button slightly on hover */
+        }
+
+        #branch {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Add margin to the submit button */
+        .submit-button {
+            margin-left: 18px;
+        }
+
+        /* Remove hover effect for the select tag */
+        #branch:hover {
+            transform: none;
+        }
+    </style>
 </head>
 <body>
-    <form action="index99.html">
-        <label for="branch" class="large-button">Select Branch1:</label>
-        <select id="branch" name="branch" class="large-button">
-            <option value="MIS">MIS</option>
-        </select>
-        <button type="submit" class="large-button">Submit</button>
-    </form>
+    <div class="container">
+        <h1>Select your branch:</h1>
+        <form action="index99.html">
+            <select id="branch" name="branch" class="large-button">
+                <option value="MIS">MIS</option>
+            </select>
+            <button type="submit" class="large-button submit-button">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
