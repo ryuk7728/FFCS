@@ -55,7 +55,22 @@ public class timetable6 extends HttpServlet {
 			session.setAttribute("ob2",ob2);
 			}
 			System.out.println("TCOMBINATION SIZE:"+tcombinations.size());
+			List<Brute> tcombinations77 = new ArrayList<>();
+            List<Brute> tcombinations78 = new ArrayList<>();
+           
+            tcombinations77.addAll(tcombinations);
+            try {
+            tcombinations78.addAll(tcombinations1);
+            }
+            catch(Exception e) {
+            	tcombinations1=new ArrayList<>();
+            	tcombinations78.addAll(tcombinations1);
+            }
+			session.setAttribute("tcombinations", tcombinations77);
+			session.setAttribute("tcombinations1", tcombinations78);
 			allcomb=ob.startend(t1, startime, endtime,arr,arr1,tcombinations,tcombinations2,tcombinations1);
+			tcombinations = (List<Brute>) session.getAttribute("tcombinations");
+			System.out.println("UPDATES TCOMBINATIONS SIZE:"+tcombinations.size());
 			System.out.println("Allcomb size in 6");
 			session.setAttribute("allcomb", allcomb);
 			session.setAttribute("ob", ob);
@@ -74,17 +89,66 @@ public class timetable6 extends HttpServlet {
 				ob.timetable1(ob2);
 				session.setAttribute("ob", ob);
 				if(arr1[0]!=1) {
-				String htmlContent = "<html>"
-		                  + "<head>"
-		                  + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
-		                  + "</head>"
-		                  + "<body>"
-		                  + "<p>" + arr[0] + "</p>"
-		                  + "<a href=\"xer4\">"
-		                  + "<button>Retry</button>"
-		                  + "</a>"
-		                  + "</body>"
-		                  + "</html>";
+					String htmlContent = "<html>"
+			                  + "<head>"
+			                  + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+			                  + "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">"
+			                  + "<style>"
+			                  + "body {"
+			                  + "    margin: 0;"
+			                  + "    padding: 0;"
+			                  + "    font-family: 'Raleway', sans-serif;"
+			                  + "    background: #34495E;"
+			                  + "    color: #fff;"
+			                  + "    display: flex;"
+			                  + "    justify-content: center;"
+			                  + "    align-items: center;"
+			                  + "    min-height: 100vh;"
+			                  + "    overflow: hidden;"
+			                  + "}"
+			                  + ".container {"
+			                  + "    background: rgba(0, 0, 0, 0.6);"
+			                  + "    padding: 20px;"
+			                  + "    border-radius: 10px;"
+			                  + "    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);"
+			                  + "    width: 600px;"
+			                  + "    text-align: center;"
+			                  + "}"
+			                  + "p {"
+			                  + "    font-size: 18px;"
+			                  + "    margin-bottom: 10px;"
+			                  + "}"
+			                  + "a {"
+			                  + "    text-decoration: none;"
+			                  + "}"
+			                  + "button {"
+			                  + "    padding: 10px 20px;"
+			                  + "    font-size: 18px;"
+			                  + "    font-family: 'Raleway', sans-serif;"
+			                  + "    background-color: #2ecc71;"
+			                  + "    border: none;"
+			                  + "    border-radius: 5px;"
+			                  + "    color: #fff;"
+			                  + "    cursor: pointer;"
+			                  + "    transition: background-color 0.3s ease, transform 0.3s ease;"
+			                  + "    margin: 10px;"
+			                  + "}"
+			                  + "button:hover {"
+			                  + "    background-color: #27ae60;"
+			                  + "    transform: scale(1.1);"
+			                  + "}"
+			                  + "</style>"
+			                  + "</head>"
+			                  + "<body>"
+			                  + "<div class=\"container\">"
+			                  + "    <p>" + arr[0] + "</p>"
+			                  + "    <a href=\"xer4\">"
+			                  + "        <button>Retry</button>"
+			                  + "    </a>"
+			                  + "</div>"
+			                  + "</body>"
+			                  + "</html>";
+
 
 			                        
 
@@ -101,12 +165,60 @@ public class timetable6 extends HttpServlet {
 					String htmlContent = "<html>"
 			                  + "<head>"
 			                  + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+			                  + "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">"
+			                  + "<style>"
+			                  + "body {"
+			                  + "    margin: 0;"
+			                  + "    padding: 0;"
+			                  + "    font-family: 'Raleway', sans-serif;"
+			                  + "    background: #34495E;"
+			                  + "    color: #fff;"
+			                  + "    display: flex;"
+			                  + "    justify-content: center;"
+			                  + "    align-items: center;"
+			                  + "    min-height: 100vh;"
+			                  + "    overflow: hidden;"
+			                  + "}"
+			                  + ".container {"
+			                  + "    background: rgba(0, 0, 0, 0.6);"
+			                  + "    padding: 20px;"
+			                  + "    border-radius: 10px;"
+			                  + "    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);"
+			                  + "    width: 600px;"
+			                  + "    text-align: center;"
+			                  + "}"
+			                  + "p {"
+			                  + "    font-size: 18px;"
+			                  + "    margin-bottom: 10px;"
+			                  + "}"
+			                  + "a {"
+			                  + "    text-decoration: none;"
+			                  + "}"
+			                  + "button {"
+			                  + "    padding: 10px 20px;"
+			                  + "    font-size: 18px;"
+			                  + "    font-family: 'Raleway', sans-serif;"
+			                  + "    background-color: #2ecc71;"
+			                  + "    border: none;"
+			                  + "    border-radius: 5px;"
+			                  + "    color: #fff;"
+			                  + "    cursor: pointer;"
+			                  + "    transition: background-color 0.3s ease, transform 0.3s ease;"
+			                  + "    margin: 10px;"
+			                  + "}"
+			                  + "button:hover {"
+			                  + "    background-color: #27ae60;"
+			                  + "    transform: scale(1.1);"
+			                  + "}"
+			                  + "</style>"
 			                  + "</head>"
 			                  + "<body>"
-			                  + "<p>" + arr[0] + "</p>"
-			                  + "<a href=\"xer5\">"
-			                  + "<button>Retry</button>"
-			                  + "</a>"
+			                  + "<div class=\"container\">"
+			                  + "    <p>" + arr[0] + "</p>"
+			                  + "    <a href=\"xer5\">"
+			                  + "        <button>Retry</button>"
+			                  + "    </a>"
+			                  + "</div>"
 			                  + "</body>"
 			                  + "</html>";
 

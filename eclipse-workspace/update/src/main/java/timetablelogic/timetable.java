@@ -1396,7 +1396,9 @@ public class timetable extends HttpServlet {
         return false;
     }
     List<Brute> theoryloop1(int s, int t,String arr[],List<Brute> tcombinations,List<Brute> tcombinations1) {
-        tcombinations1.clear();
+        System.out.println("INSIDE THEORY LOOP1");
+        List<Brute> tcombinations7 = new ArrayList<>();
+    	tcombinations1=tcombinations7;
         int k = 0;
         boolean x = false;
         System.out.println("Tcombinations:  "+tcombinations.size());
@@ -1414,8 +1416,10 @@ public class timetable extends HttpServlet {
             k = 0;
         }
         if (!x) {
+        	System.out.println("INSIDE FAIL CONDITION");
         	arr[0]="Class cannot start at this time on "+days[t]+", please select an earlier time";
-            return null;
+        	System.out.println("THE VALUE IS"+arr[0]);
+        	return null;
 //            if (t == 0) {
 //                do {
 //                    System.out.println("Enter what is the minimum time at which class should start on Monday: \n1)8:00\n2)9:00\n3)10:00\n4)11:00\n5)12:00\n6)No morning");
@@ -1471,7 +1475,8 @@ public class timetable extends HttpServlet {
     }
 
     List<Brute> labloop1(int s, int t,String arr[],List<Brute> tcombinations,List<Brute> tcombinations1) {
-        tcombinations1.clear();
+    	 List<Brute> tcombinations7 = new ArrayList<>();
+    	 tcombinations1=tcombinations7;
         int k = 0;
         if (s == 4) {
             s -= 4;
@@ -1721,7 +1726,10 @@ public class timetable extends HttpServlet {
 
 
     public List<Brute> startend(int t,List<Integer> startime,List<Integer> endtime,String arr[],int arr1[],List<Brute> tcombinations,List<Brute> tcombinations2,List<Brute> tcombinations1){
-        if(tcombinations.isEmpty()){
+        
+    	System.out.println("INSIDE STARTEND");
+    	System.out.println(tcombinations.size());
+    	if(tcombinations.isEmpty()){
 
             tcombinations.addAll(tcombinations1);
             tcombinations1.clear();
@@ -2033,9 +2041,10 @@ public class timetable extends HttpServlet {
             catch(NullPointerException e) {
             	return null;
             }
+            List<Brute> tcombinations9 = new ArrayList<>();
             tcombinations.clear();
             tcombinations.addAll(tcombinations2);
-            tcombinations1.clear();
+            tcombinations1=tcombinations9;
             tcombinations2.clear();
 
 //            while (e1!=1 && e1!=2 && e1!=3 && e1!=4) {

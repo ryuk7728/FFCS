@@ -66,10 +66,10 @@
         <h1>Select preferred option:</h1>
         <div class="button-container">
             <a href="xer4?ts=1">
-                <button>Apply Time Constraint</button>
+                <button>Customized Timings</button>
             </a>
             <a href="xer4?ts=2">
-                <button>Neglect Time Constraint</button>
+                <button>Any Timings</button>
             </a>
         </div>
     </div>

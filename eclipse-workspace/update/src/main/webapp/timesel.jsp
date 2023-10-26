@@ -1,119 +1,180 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Class Start Time</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background: #34495E;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto; /* Allow scrolling on the entire page */
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 32px;
+            text-align: center; /* Center text horizontally */
+        }
+
+        h3 {
+            font-size: 24px;
+            margin: 20px 0; /* Add spacing between h3 elements */
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            background-color: #2ecc71;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
-    <form action="xer5">
-        <p>Select the minimum time at which class should start for each day:</p>
+    <div class="container">
+        <form action="xer5">
+            <h1>Select your preferred start time:</h1>
 
-        <h3>Monday</h3>
-        <label>
-            <input type="radio" name="classTimeMonday" value="1"> 8:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeMonday" value="2"> 9:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeMonday" value="3"> 10:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeMonday" value="4"> 11:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeMonday" value="5"> 12:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeMonday" value="6"> No morning
-        </label><br>
+            <h3>Monday</h3>
+            <label>
+                <input type="radio" name="classTimeMonday" value="1"> 8:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeMonday" value="2"> 9:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeMonday" value="3"> 10:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeMonday" value="4"> 11:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeMonday" value="5"> 12:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeMonday" value="6"> No morning
+            </label><br>
 
-        <h3>Tuesday</h3>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="1"> 8:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="2"> 9:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="3"> 10:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="4"> 11:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="5"> 12:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeTuesday" value="6"> No morning
-        </label><br>
+            <h3>Tuesday</h3>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="1"> 8:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="2"> 9:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="3"> 10:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="4"> 11:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="5"> 12:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeTuesday" value="6"> No morning
+            </label><br>
 
-        <h3>Wednesday</h3>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="1"> 8:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="2"> 9:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="3"> 10:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="4"> 11:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="5"> 12:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeWednesday" value="6"> No morning
-        </label><br>
+            <h3>Wednesday</h3>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="1"> 8:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="2"> 9:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="3"> 10:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="4"> 11:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="5"> 12:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeWednesday" value="6"> No morning
+            </label><br>
 
-        <h3>Thursday</h3>
-        <label>
-            <input type="radio" name="classTimeThursday" value="1"> 8:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeThursday" value="2"> 9:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeThursday" value="3"> 10:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeThursday" value="4"> 11:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeThursday" value="5"> 12:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeThursday" value="6"> No morning
-        </label><br>
+            <h3>Thursday</h3>
+            <label>
+                <input type="radio" name="classTimeThursday" value="1"> 8:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeThursday" value="2"> 9:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeThursday" value="3"> 10:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeThursday" value="4"> 11:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeThursday" value="5"> 12:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeThursday" value="6"> No morning
+            </label><br>
 
-        <h3>Friday</h3>
-        <label>
-            <input type="radio" name="classTimeFriday" value="1"> 8:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeFriday" value="2"> 9:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeFriday" value="3"> 10:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeFriday" value="4"> 11:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeFriday" value="5"> 12:00
-        </label><br>
-        <label>
-            <input type="radio" name="classTimeFriday" value="6"> No morning
-        </label><br>
+            <h3>Friday</h3>
+            <label>
+                <input type="radio" name="classTimeFriday" value="1"> 8:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeFriday" value="2"> 9:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeFriday" value="3"> 10:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeFriday" value="4"> 11:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeFriday" value="5"> 12:00
+            </label><br>
+            <label>
+                <input type="radio" name="classTimeFriday" value="6"> No morning
+            </label><br>
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>
