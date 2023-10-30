@@ -26,7 +26,7 @@ public class timetable0 extends HttpServlet {
 		int time =Integer.parseInt(req.getParameter("time"));
 		System.out.println("THE TIME IS"+time);
 	    session.setAttribute("time", time);
-		RequestDispatcher rd = req.getRequestDispatcher("index3.html");
+		RequestDispatcher rd = req.getRequestDispatcher("rex");
         rd.forward(req, res);
 		
 		

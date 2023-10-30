@@ -91,6 +91,9 @@
             <label>
                 <input type="checkbox" name="subjects" value="ISS"> ISS
             </label>
+            <label>
+                <input type="checkbox" name="subjects" value="SAD"> SAD
+            </label>
             <input type="submit" value="Submit">
         </form>
     </div>

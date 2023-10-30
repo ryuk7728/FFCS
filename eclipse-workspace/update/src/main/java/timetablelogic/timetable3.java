@@ -30,6 +30,7 @@ public class timetable3 extends HttpServlet {
 
 		List<Brute> tcombinations3 = new ArrayList<>();
 		List<Brute> allcomb = new ArrayList<>();
+		
 		String teachersInput="";
 		String[] arr = new String[1];
 		int v = (int) session.getAttribute("v");
@@ -39,9 +40,13 @@ public class timetable3 extends HttpServlet {
 		timetable ob1 = new timetable();
 		boolean r = true;
 		if(v==1) {
+			int teacherCount = Integer.parseInt(req.getParameter("teacherCount"));
+			String[] teachersArray=teachersArray= new String[teacherCount];
 			try {
-			teachersInput = req.getParameter("teacher");
-			System.out.println("Value of teacher input:"+ teachersInput.length());
+			 for (int i = 0; i < teacherCount; i++) {
+		            teachersArray[i] = req.getParameter("teacher" + (i + 1));
+		            System.out.println(teachersArray[i]);
+		        }
 			}
 			catch(NullPointerException e) {
 				System.out.println("Inside nullpointer exception");
@@ -49,11 +54,8 @@ public class timetable3 extends HttpServlet {
 				RequestDispatcher rd = req.getRequestDispatcher("teasel1.jsp");
 	            rd.forward(req, res);
 			}
-			if(r) {
-			teachersInput=teachersInput.replaceAll("\\s+", "");
-			String[] teachersArray = teachersInput.split(","); 
+			if(r) { 
             List<String> teacher = Arrays.asList(teachersArray);
-            teacher=convertListElements(teacher);
             if(!z) {
             System.out.println("We're so back");
             ob1 = new timetable(ob);

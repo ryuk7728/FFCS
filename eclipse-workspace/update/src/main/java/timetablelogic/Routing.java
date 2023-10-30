@@ -176,7 +176,7 @@ public class Routing extends HttpServlet {
        
         
         
-        w=Integer.parseInt(req.getParameter("subb"));
+        w=1;
         session.setAttribute("w", w);
         session.setAttribute("ob", ob);
         session.setAttribute("t2", t1);

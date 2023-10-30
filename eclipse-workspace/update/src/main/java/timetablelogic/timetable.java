@@ -1266,7 +1266,7 @@ public class timetable extends HttpServlet {
                         tcombinations.addAll(tcombinations3);
                         tcombinations1.clear();
                         clearts1();
-                        arr[0] = teacher.get(i)+ " is not available due to inavailability in morning/evening or complete clash of slots between selected subjects please retry";
+                        arr[0] = teacher.get(i)+ " is not available due to inavailability in morning/evening please retry";
                         return null;
                 }
 

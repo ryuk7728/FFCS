@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,20 +32,31 @@
             text-align: center;
         }
 
-        input[type="text"] {
-            padding: 10px;
-            font-size: 18px;
+        select {
+            padding: 5px; /* Increased padding */
+            font-size: 15px; /* Increased font size */
             font-family: 'Raleway', sans-serif;
-            background-color: #fff; /* Set the background color to white */
+            background-color: #fff;
             border: none;
             border-radius: 5px;
-            color: #000; /* Change text color to black */
+            color: #000;
+            margin: 10px;
+        }
+
+        input[type="number"] {
+            padding: 10px; /* Increased padding */
+            font-size: 15px; /* Increased font size */
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #000;
             margin: 10px;
         }
 
         input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 10px 20px; /* Increased padding */
+            font-size: 20px; /* Increased font size */
             font-family: 'Raleway', sans-serif;
             background-color: #2ecc71;
             border: none;
@@ -61,18 +71,83 @@
             background-color: #27ae60;
             transform: scale(1.1);
         }
+
         h1 {
-            font-size: 30px; /* Decreased the font size to 24px */
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <form action="xer3">
-            <h1>Enter the teachers you want separated by commas:</h1>
-            <input type="text" name="teacher" multiple><br>
+        <form action="xer3" id="teacherForm">
+            <h1>Enter the number of teachers:</h1>
+            <input type="number" id="teacherCount" name="teacherCount" min="1">
+            <button type="button" id="generateDropdowns">Enter</button>
+            <div id="teacherDropdowns"></div>
             <input type="submit" value="Submit">
         </form>
     </div>
+
+<script>
+    // Define an array of teacher names
+    var teacherNames = [
+        "Sumathy S",
+        "Kamalakannan SAD",
+        "Kamalakannan ST",
+        "Senthil Kumar U",
+        "Sureka S",
+        "Sree Dharinya SAD",
+        "Sree Dharinya REM",
+        "Felicita S A M",
+        "Mangayarkarasi R",
+        "Rajesh Kaluri",
+        "Senthil Kumar M",
+        "Thilagavathi",
+        "Sweta Bhattacharya",
+        "Karthikeyan P",
+        "Vijayan E",
+        "Chemmalar Selvi G",
+        "Prasanna M",
+        "Iyapparaja M",
+        "Arivuselvan K ST",
+        "Arivuselvan K OS",
+        "Vinoth Kumar V",
+        "Asis Kumar Tripathy",
+        "Kumar P J",
+        "Senthil Kumar P",
+        "Harshita Patel",
+        "Sivashankari R",
+        "Angu Lakshmi M",
+        "Thandeeswaran R",
+        "Rahamathunnisa U",
+        "Vani M P",
+        "Navaneethan C",
+        "Priya M",
+        "Anbarasa Kumar A"
+    ];
+
+    document.getElementById('generateDropdowns').addEventListener('click', function () {
+        var teacherCount = document.getElementById('teacherCount').value;
+        var dropdownsContainer = document.getElementById('teacherDropdowns');
+        dropdownsContainer.innerHTML = '';
+
+        for (var i = 0; i < teacherCount; i++) {
+            var dropdown = document.createElement('select');
+            dropdown.name = 'teacher' + (i + 1);
+
+            // Add teacher name options
+            <!-- Inside your JavaScript code where you create the dropdown options -->
+for (var j = 0; j < teacherNames.length; j++) {
+    var option = document.createElement('option');
+    option.value = teacherNames[j]; // Set the value to the teacher name
+    option.text = teacherNames[j];
+    dropdown.appendChild(option);
+}
+
+
+            dropdownsContainer.appendChild(dropdown);
+        }
+    });
+</script>
 </body>
 </html>

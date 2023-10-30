@@ -21,14 +21,21 @@ public class timetable2 extends HttpServlet {
 		res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
 	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
 	    res.setHeader("Expires", "0");
-		
+	    boolean z=false;
+		int ch=0;
 		HttpSession session = req.getSession();
 //		int t1 =(int) session.getAttribute("z99");
 //		System.out.println("VALUE OF T1:"+t1);
 		List<Brute> tcombinations = (List<Brute>) session.getAttribute("tcombinations");
 //		System.out.println("TCOMBTEACHER in 2"+tcombinations.get(0).theory);
 		int v=0;
-		boolean z =(boolean) session.getAttribute("z");
+		try {
+		z =(boolean) session.getAttribute("z"); //To check if control shifted from generated timetable page to here
+		}
+		catch(Exception e) {
+			ch=1;
+		}
+		if(ch==0) {
 		boolean r=true;
 		if(!z) {
 			try {
@@ -64,5 +71,10 @@ public class timetable2 extends HttpServlet {
 			}
 			}
 	}
+		else {
+			RequestDispatcher rd = req.getRequestDispatcher("index.html");
+            rd.forward(req, res);
+		}
 
+}
 }
