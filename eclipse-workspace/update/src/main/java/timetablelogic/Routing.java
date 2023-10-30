@@ -19,9 +19,9 @@ public class Routing extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //		
-//		res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
-//	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
-//	    res.setHeader("Expires", "0");
+		res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
+	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+	    res.setHeader("Expires", "0");
     	
 		InputStream is = Routing.class.getResourceAsStream("TimetableExtendedInput2.txt");
         Scanner reader = new Scanner(is);

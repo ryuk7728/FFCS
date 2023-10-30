@@ -19,6 +19,9 @@ public class timetable extends HttpServlet {
 
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
+		res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
+	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+	    res.setHeader("Expires", "0");
 		List<Integer> startime = new ArrayList<>();
 		List<Integer> endtime = new ArrayList<>();
 		int ts=0;
@@ -32,9 +35,6 @@ public class timetable extends HttpServlet {
 	    int t1=0;
 	    timetable ob;
 		HttpSession session = req.getSession();
-		res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
-	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
-	    res.setHeader("Expires", "0");
 	    t1 = (int)(session.getAttribute("t2"));
         w = (int)(session.getAttribute("w"));
         ob = (timetable)session.getAttribute("ob");

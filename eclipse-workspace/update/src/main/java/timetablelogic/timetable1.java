@@ -70,10 +70,16 @@ public class timetable1 extends HttpServlet {
 	        session.setAttribute("embedded3", embedded3);
 			}
 		
-		
 		allcomb=ob.bruteForce(theory3,lab3,embedded3,tcombinations);
+		
+		if(allcomb.size()==0) {
+			RequestDispatcher rd = req.getRequestDispatcher("incompatible.html");
+	        rd.forward(req, res);
+		}
+		else {
 		int z99 = 10000;
 		System.out.println("ALLCOMB:"+allcomb.get(0).theory);
+			
 		System.out.println("Allcomb size in 1:"+allcomb.size());
 		session.setAttribute("allcomb", allcomb);
 		session.setAttribute("tcombinations", tcombinations);
@@ -83,6 +89,7 @@ public class timetable1 extends HttpServlet {
 		session.setAttribute("z99", z99);
 		RequestDispatcher rd = req.getRequestDispatcher("teasel.jsp");
         rd.forward(req, res);
+		}
 		
 	}
 

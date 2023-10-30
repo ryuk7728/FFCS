@@ -1,261 +1,195 @@
+6
+SPM
+1
+1
+Sumathy S
+G1
+SAD
+1
+8
+Kamalakannan J
+B2
+Senthil Kumar U
+B2
+Sureka S
+B2
+Sree Dharinya S
+B2
+Kamalakannan J
+B1
+Senthil Kumar U
+B1
+Sureka S
+B1
+Sree Dharinya S
+B1
+SCAM
+1
+1
+Felicitas S A M
+G2
+ISS
 2
-CAO
+2
+Mangayarkarasi R
+F1
+TF1
+Mangayarkarasi R
+F2
+TF2
+REM
+1
+9
+Thilagavathi M
+C1
+Sweta Bhattacharya
+C1
+Sree Dharinya S
+C1
+Karthikeyan P
+C1
+Thilagavathi M
+C2
+Karthikeyan P
+C2
+Sweta Bhattacharya
+C2
+Vijayan E
+C2
+Chemmalar Selvi G
+C2
+ST
 2
 9
-Malaserene
+Kamalakannan J
 E1
 TE1
-Vanitha
+Rajesh Kaluri
 E1
 TE1
-Navaneethan
+Senthil Kumar M
 E1
 TE1
-Srinivas
+Prasanna M
 E1
 TE1
-Malaserene
+Senthil Kumar M
 E2
 TE2
-Benjula
+Prasanna M
 E2
 TE2
-Deepa
+Iyapparaja M
 E2
 TE2
-Srinivas
+Arivuselvan K
 E2
 TE2
-Santhi
+Vinoth Kumar V
 E2
 TE2
-TOC
-2
-8
-Raghavan
-B2
-TB2
-Kuruva
-B2
-TB2
-Dharmendra
-B2
-TB2
-Uma
-B2
-TB2
-Kuruva
-B1
-TB1
-Dharmendra
-B1
-TB1
-Raghavan
-B1
-TB1
-Uma
-B1
-TB1
 0
-4
-DBMS
+2
+OS
 2
 2
 9
-Ramkumar
-A2
-TA2
-L9
-L10
-Prabhavathy
-A2
-TA2
-L19
-L20
-Senthilkumar
-A2
-TA2
-L19
-L20
-Ranichandra
-A2
-TA2
-L19
-L20
-Jayaram
-A2
-TA2
-L29
-L30
-Senthilkumar
-A1
-TA1
-L51
-L52
-Ramkumar
-A1
-TA1
-L37
-L38
-Ranichandra
-A1
-TA1
-L37
-L38
-Prabhavathy
-A1
-TA1
-L49
-L50
-DL
-2
-2
-11
-Swarna
-C1
-TC1
-L57
-L58
-Nithya
-C1
-TC1
-L45
-L46
-Suganya
-C1
-TC1
-L51
-L52
-Suganya
-C2
-TC2
-L15
-L16
-Ushapreethi
-C2
-TC2
-L11
-L12
-Swarna
-C2
-TC2
-L3
-L4
-Sumathi
-C2
-TC2
-L19
-L20
-Nithya
-C2
-TC2
-L29
-L30
-Swarsuma
-C1
-TC1
-L31
-L32
-Nithsuma
-C1
-TC1
-L31
-L32
-Sugasuma
-C1
-TC1
-L31
-L32
-Java
-2
-2
-8
-Thanapal
-G1
-TG1
-L55
-L56
-Nirmala
-G1
-TG1
-L33
-L34
-Anitha
-G1
-TG1
-L33
-L34
-John
-G1
-TG1
-L55
-L56
-John
-G2
-TG2
-L1
-L2
-Anitha
-G2
-TG2
-L11
-L12
-Thanapal
-G2
-TG2
-L1
-L2
-Nirmala
-G2
-TG2
-L11
-L12
-Stats
-2
-2
-9
-Nalliah
+Asis Kumar Tripathy
 F1
 TF1
 L49
 L50
-Manimaran
+Kumar P J
 F1
 TF1
-L55
-L56
-Amrit
+L49
+L50
+Senthil Kumar P
 F1
 TF1
-L53
-L54
-Rajesh
+L37
+L38
+Harshita Patel
 F1
 TF1
-L57
-L58
-Nalliah
+L43
+L44
+Asis Kumar Tripathy
 F2
 TF2
 L21
 L22
-Rajasekaran
+Kumar P J
 F2
 TF2
-L19
-L20
-Gowrisankar
+L21
+L22
+Sivashankari R
 F2
 TF2
-L29
-L30
-Dinesh
+L11
+L12
+Angu Lakshmi M
 F2
 TF2
-L25
+L21
+L22
+Arivuselvan K
+F2
+TF2
+L3
+L4
+CN
+2
+2
+10
+Thandeeswaran R
+A1
+TA1
+L37
+L38
+Rahamathunnisa U
+A1
+TA1
+L51
+L52
+Vani M P
+A1
+TA1
+L51
+L52
+Navaneethan C
+A1
+TA1
+L55
 L56
-Karthikeyan
-F2
-TF2
-L23
-L24
+Priya M
+A1
+TA1
+L33
+L34
+Vani M P
+A2
+TA2
+L7
+L8
+Rahamathunnisa U
+A2
+TA2
+L21
+L22
+Anbarasa Kumar A
+A2
+TA2
+L21
+L22
+Navaneethan C
+A2
+TA2
+L21
+L22
+Priya M
+A2
+TA2
+L7
+L8

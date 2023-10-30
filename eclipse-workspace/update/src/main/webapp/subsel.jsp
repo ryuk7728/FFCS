@@ -71,22 +71,25 @@
         <form action="xer1">
             <h2>Choose Subjects:</h2>
             <label>
-                <input type="checkbox" name="subjects" value="CAO"> CAO
+                <input type="checkbox" name="subjects" value="CN"> CN
             </label>
             <label>
-                <input type="checkbox" name="subjects" value="TOC"> TOC
+                <input type="checkbox" name="subjects" value="OS"> OS
             </label>
             <label>
-                <input type="checkbox" name="subjects" value="DL"> DL
+                <input type="checkbox" name="subjects" value="ST"> ST
             </label>
             <label>
-                <input type="checkbox" name="subjects" value="Java"> Java
+                <input type="checkbox" name="subjects" value="SCAM"> SCAM
             </label>
             <label>
-                <input type="checkbox" name="subjects" value="Stats"> Stats
+                <input type="checkbox" name="subjects" value="SPM"> SPM
             </label>
             <label>
-                <input type="checkbox" name="subjects" value="DBMS"> DBMS
+                <input type="checkbox" name="subjects" value="REM"> REM
+            </label>
+            <label>
+                <input type="checkbox" name="subjects" value="ISS"> ISS
             </label>
             <input type="submit" value="Submit">
         </form>
