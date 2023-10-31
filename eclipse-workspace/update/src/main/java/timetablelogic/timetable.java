@@ -34,6 +34,7 @@ public class timetable extends HttpServlet {
 	    boolean xy=false;
 	    int t1=0;
 	    timetable ob;
+	    int u = 0;
 		HttpSession session = req.getSession();
 	    t1 = (int)(session.getAttribute("t2"));
         w = (int)(session.getAttribute("w"));
@@ -59,6 +60,7 @@ public class timetable extends HttpServlet {
 		session.setAttribute("eve", eve);
 		session.setAttribute("startime",startime);
 		session.setAttribute("startime",endtime);
+		session.setAttribute("u", u);
 //        m++;
         if(w==1) {
         RequestDispatcher rd = req.getRequestDispatcher("subsel.jsp");

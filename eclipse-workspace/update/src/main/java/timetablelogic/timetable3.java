@@ -23,15 +23,24 @@ public class timetable3 extends HttpServlet {
 	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
 	    res.setHeader("Expires", "0");
 		HttpSession session = req.getSession();
-		List<Brute> tcombinations = (List<Brute>) session.getAttribute("tcombinations");
-		System.out.println("TCOMBTEACHER"+tcombinations.get(0).theory);
+		int u =(int)(session.getAttribute("u"));
+		System.out.println("VALUE OF U is: "+u);
+		List<Brute> tcombinations=new ArrayList<>();
+		if(u==0) {
+		 tcombinations = (List<Brute>) session.getAttribute("tcombinations");
+		 List<Brute> tcombinations47=new ArrayList<>();
+		 tcombinations47.addAll(tcombinations);
+		 session.setAttribute("tcombinations47", tcombinations47);
+		}
+		else {
+			tcombinations = (List<Brute>) session.getAttribute("tcombinations47");
+		}
+		System.out.println("TCOMBTEACHER SIZE"+tcombinations.size());
 
 		List<Brute> tcombinations1 = new ArrayList<>();
 
 		List<Brute> tcombinations3 = new ArrayList<>();
 		List<Brute> allcomb = new ArrayList<>();
-		
-		String teachersInput="";
 		String[] arr = new String[1];
 		int v = (int) session.getAttribute("v");
 		boolean z = (boolean) session.getAttribute("z");
@@ -41,7 +50,7 @@ public class timetable3 extends HttpServlet {
 		boolean r = true;
 		if(v==1) {
 			int teacherCount = Integer.parseInt(req.getParameter("teacherCount"));
-			String[] teachersArray=teachersArray= new String[teacherCount];
+			String[] teachersArray=new String[teacherCount];
 			try {
 			 for (int i = 0; i < teacherCount; i++) {
 		            teachersArray[i] = req.getParameter("teacher" + (i + 1));
@@ -62,7 +71,10 @@ public class timetable3 extends HttpServlet {
             session.setAttribute("ob1", ob1);
             }
 			System.out.println(teacher);
+			u++;
+			
 			allcomb = ob.teachers(teacher,arr,tcombinations,tcombinations1,tcombinations3);
+			session.setAttribute("u", u);
 			session.setAttribute("allcomb", allcomb);
 			session.setAttribute("tcombinations", tcombinations);
 			session.setAttribute("tcombinations1", tcombinations1);

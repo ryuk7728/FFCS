@@ -19,8 +19,16 @@ public class timetable5 extends HttpServlet  {
 	    res.setHeader("Expires", "0");
 		
 		System.out.println("In 5");
+		boolean eve=false;;
+		int u = 0;
 		HttpSession session = req.getSession();
-		boolean eve = (boolean) session.getAttribute("eve");
+		try {
+		eve = (boolean) session.getAttribute("eve");
+		}
+		catch(Exception e) {
+			u=1;
+		}
+		if(u==0) {
 		int t1 = (int) session.getAttribute("t1");
 		List<Integer> startime = (List<Integer>) session.getAttribute("startime");
 		boolean z =(boolean) session.getAttribute("z");
@@ -59,5 +67,10 @@ public class timetable5 extends HttpServlet  {
 					}
 			}
 	}
+		else {
+			RequestDispatcher rd = req.getRequestDispatcher("index.html");
+            rd.forward(req, res);
+		}
 
+}
 }
