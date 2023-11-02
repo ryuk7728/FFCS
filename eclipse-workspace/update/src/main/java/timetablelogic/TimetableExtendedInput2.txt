@@ -2,61 +2,61 @@
 SPM
 1
 1
-Sumathy S
+Sumathy S SPM
 G1
 SAD
 1
 8
 Kamalakannan SAD
 B2
-Senthil Kumar U
+Senthil Kumar U SAD
 B2
-Sureka S
+Sureka S SAD
 B2
-Sree Dharinya S
+Sree Dharinya S SAD
 B2
 Kamalakannan SAD
 B1
-Senthil Kumar U
+Senthil Kumar U SAD
 B1
-Sureka S
+Sureka S SAD
 B1
 Sree Dharinya SAD
 B1
 SCAM
 1
 1
-Felicitas S A M
+Felicitas S A M SCAM
 G2
 ISS
 2
 2
-Mangayarkarasi R
+Mangayarkarasi R ISS
 F1
 TF1
-Mangayarkarasi R
+Mangayarkarasi R ISS
 F2
 TF2
 REM
 1
 9
-Thilagavathi M
+Thilagavathi M REM
 C1
-Sweta Bhattacharya
+Sweta Bhattacharya REM
 C1
 Sree Dharinya REM
 C1
-Karthikeyan P
+Karthikeyan P REM
 C1
-Thilagavathi M
+Thilagavathi M REM
 C2
-Karthikeyan P
+Karthikeyan P REM
 C2
-Sweta Bhattacharya
+Sweta Bhattacharya REM
 C2
-Vijayan E
+Vijayan E REM
 C2
-Chemmalar Selvi G
+Chemmalar Selvi G REM
 C2
 ST
 2
@@ -64,28 +64,28 @@ ST
 Kamalakannan ST
 E1
 TE1
-Rajesh Kaluri
+Rajesh Kaluri ST
 E1
 TE1
-Senthil Kumar M
+Senthil Kumar M ST
 E1
 TE1
-Prasanna M
+Prasanna M ST
 E1
 TE1
-Senthil Kumar M
+Senthil Kumar M ST
 E2
 TE2
-Prasanna M
+Prasanna M ST
 E2
 TE2
-Iyapparaja M
+Iyapparaja M ST
 E2
 TE2
 Arivuselvan ST
 E2
 TE2
-Vinoth Kumar V
+Vinoth Kumar V ST
 E2
 TE2
 0
@@ -94,42 +94,42 @@ OS
 2
 2
 9
-Asis Kumar Tripathy
+Asis Kumar Tripathy OS
 F1
 TF1
 L49
 L50
-Kumar P J
+Kumar P J OS
 F1
 TF1
 L49
 L50
-Senthil Kumar P
+Senthil Kumar P OS
 F1
 TF1
 L37
 L38
-Harshita Patel
+Harshita Patel OS
 F1
 TF1
 L43
 L44
-Asis Kumar Tripathy
+Asis Kumar Tripathy OS
 F2
 TF2
 L21
 L22
-Kumar P J
+Kumar P J OS
 F2
 TF2
 L21
 L22
-Sivashankari R
+Sivashankari R OS
 F2
-TF2
+TF2 
 L11
 L12
-Angu Lakshmi M
+Angu Lakshmi M OS
 F2
 TF2
 L21
@@ -143,52 +143,52 @@ CN
 2
 2
 10
-Thandeeswaran R
+Thandeeswaran R CN
 A1
 TA1
 L37
 L38
-Rahamathunnisa U
+Rahamathunnisa U CN
 A1
 TA1
 L51
 L52
-Vani M P
+Vani M P CN
 A1
 TA1
 L51
 L52
-Navaneethan C
+Navaneethan C CN
 A1
 TA1
 L55
 L56
-Priya M
+Priya M CN
 A1
 TA1
 L33
 L34
-Vani M P
+Vani M P CN
 A2
 TA2
 L7
 L8
-Rahamathunnisa U
+Rahamathunnisa U CN
 A2
 TA2
 L21
 L22
-Anbarasa Kumar A
+Anbarasa Kumar A CN
 A2
 TA2
 L21
 L22
-Navaneethan C
+Navaneethan C CN
 A2
 TA2
 L21
 L22
-Priya M
+Priya M CN
 A2
 TA2
 L7
