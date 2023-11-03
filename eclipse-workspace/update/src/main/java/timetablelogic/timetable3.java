@@ -23,17 +23,31 @@ public class timetable3 extends HttpServlet {
 	    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
 	    res.setHeader("Expires", "0");
 		HttpSession session = req.getSession();
-		int u =(int)(session.getAttribute("u"));
+		int u = 0;
+		try {
+		u =(int)(session.getAttribute("u"));
+		}
+		catch(Exception e) {
+			RequestDispatcher rd = req.getRequestDispatcher("index.html");
+            rd.forward(req, res);
+		}
 		System.out.println("VALUE OF U is: "+u);
 		List<Brute> tcombinations=new ArrayList<>();
 		if(u==0) {
 		 tcombinations = (List<Brute>) session.getAttribute("tcombinations");
 		 List<Brute> tcombinations47=new ArrayList<>();
+		 List<Brute> tcombinations48=new ArrayList<>();
 		 tcombinations47.addAll(tcombinations);
+		 tcombinations48.addAll(tcombinations);
 		 session.setAttribute("tcombinations47", tcombinations47);
+         session.setAttribute("tcombinations48", tcombinations48);
 		}
 		else {
 			tcombinations = (List<Brute>) session.getAttribute("tcombinations47");
+			if(tcombinations.size()==0) {
+				System.out.println("INSIDE");
+				tcombinations = (List<Brute>) session.getAttribute("tcombinations48");
+			}
 		}
 		System.out.println("TCOMBTEACHER SIZE"+tcombinations.size());
 

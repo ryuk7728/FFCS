@@ -1320,7 +1320,7 @@ public class timetable extends HttpServlet {
                 }
 
                 while (k){
-                	arr[0] = teacher.get(i)+" not available due to previous constraints please select from the following teachers: (Ignore numbers)"+ Brute.teacherSubject1.get(sub);
+                	arr[0] = teacher.get(i)+" not available due to clash in slots with previously selected teachers or inavailability in morning theory/evening theory please select from the following teachers: (Ignore numbers)"+ Brute.teacherSubject1.get(sub);
                 	return null;
                     
                 }
